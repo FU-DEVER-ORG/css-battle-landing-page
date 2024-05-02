@@ -6,7 +6,7 @@ function HeroSection() {
     <section className={styles['hero']}>
       <div className="container">
         <h3 className={styles['hero__title']}>title</h3>
-        <div className={styles['hero__image']}>Image</div>
+        <div className={styles['hero__image']}>image</div>
       </div>
     </section>
   );
