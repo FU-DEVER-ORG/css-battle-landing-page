@@ -1,7 +1,8 @@
 import Footer from './Footer';
 import Header from './Header';
 
-function LandingLayout({ children }) {
+function LandingLayout(props) {
+  console.log('props', props);
   return (
     <>
       <Header />
