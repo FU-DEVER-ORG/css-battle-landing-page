@@ -1,5 +1,11 @@
 .header {
   background-color: aqua;
-
   padding: 20px 0;
+}
+
+#logo {
+  display: grid;
+  grid-template-areas:
+  "logo-logo text-logo"
+  "logo-logo year-logo";
 }
