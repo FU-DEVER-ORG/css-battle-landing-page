@@ -5,8 +5,8 @@ function HeroSection() {
   return (
     <section className={styles['hero']}>
       <div className="container">
-        <h3 className={styles['hero__title']}>title</h3>
-        <div className={styles['hero__image']}>image</div>
+        <h3 className={styles['hero__title']}>Hero</h3>
+        <div className={styles['hero__image']}>Image</div>
       </div>
     </section>
   );

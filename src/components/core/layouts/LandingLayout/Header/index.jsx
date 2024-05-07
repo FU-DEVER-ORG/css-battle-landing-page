@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className={styles['header']}>
       <div className="container">
-        <div>HeroSection</div>
+        <div>Hero Section</div>
       </div>
     </header>
   );
