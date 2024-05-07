@@ -1,8 +1,8 @@
+import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 
-function LandingLayout(props) {
-  console.log('props', props);
+function LandingLayout({ children }) {
   return (
     <>
       <Header />
