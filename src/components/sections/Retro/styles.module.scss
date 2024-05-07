@@ -3,18 +3,22 @@
   padding: 60px 0;
 
   &__title {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 23.71px;
+    font-weight: 400;
     color: #000000;
-    text-align: center;
-    margin-top: 5% ;
-
+    margin: 40px 0 0 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__outimage {
     width: 1280px;
     height: 400px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     
@@ -22,31 +26,24 @@
 
   &__image {
     border: 2px solid #333232;
-    border-radius: 5px;
-    box-shadow: 4px 8px 8px 0px #512488;
-    cursor: pointer;
     margin: 20px;
     transition: 400ms;
-  } 
 
-  &__image:hover {
-    filter: blackscale(1);
-    transform: scale3d(1.10,1.10,1.05);
-  }
+  } 
 
   &__intro1 {
    font-size: 32px;
    line-height: 32px;
    color: #9418B2; 
    padding-left: 15px;
-   font-weight: bold;
+   font-weight: 400;
 
   }
 
   &__intro2 {
     font-size: 20px ;
     line-height: 20px;
-    font-weight: medium;
+    font-weight: 400;
     color: #000000; 
     padding-left: 15px;
 
