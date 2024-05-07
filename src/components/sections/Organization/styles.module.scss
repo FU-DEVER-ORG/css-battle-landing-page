@@ -1,6 +1,15 @@
 @import './src/style/styles.mixins.scss';
 
 .org {
+  .container {
+    max-width: 1440px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    padding: 0px;
+  }
+
   &__title {
     display: flex;
     justify-content: center;
@@ -33,17 +42,19 @@
 
     @include mobile {
       gap: 30px;
-      padding: 0px 12px;
-      height: 80px;
+      padding: 10px 15px;
+      height: max-content;
     }
 
     @include tablet {
       gap: 60px;
-      padding: 0px 50px;
-      height: 150px;
+      padding: 20px 50px;
+      height: max-content;
     }
 
     .image__logo {
+      object-fit: cover;
+
       @include mobile {
         height: 60%;
         width: 20%;
@@ -56,6 +67,8 @@
     }
 
     .image__logo--content {
+      object-fit: cover;
+
       @include mobile {
         height: 40%;
         width: 40%;
