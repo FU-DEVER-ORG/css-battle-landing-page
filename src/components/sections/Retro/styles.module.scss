@@ -1,20 +1,16 @@
 .contact {
   background-color: #ffffff;
-
   padding: 60px 0;
 
-  //Tieu de cam nghi
   &__title {
     font-size: 20px;
-    line-height: 23.71px;
-    font-family: Oswald;
-    font:  bold;
-    color: #000;
+    line-height: 24px;
+    color: #000000;
     text-align: center;
     margin-top: 5% ;
-    margin-bottom: 0%;
+
   }
-  //border ben ngoai
+
   &__outimage {
     width: 1280px;
     height: 400px;
@@ -23,7 +19,7 @@
     align-items: center;
     
   }
-  //Fix anh
+
   &__image {
     border: 2px solid #333232;
     border-radius: 5px;
@@ -32,7 +28,7 @@
     margin: 20px;
     transition: 400ms;
   } 
-  //effect anh
+
   &__image:hover {
     filter: blackscale(1);
     transform: scale3d(1.10,1.10,1.05);
@@ -42,31 +38,28 @@
    font-size: 32px;
    line-height: 32px;
    color: #9418B2; 
-   font-family: Oswald;
    padding-left: 15px;
+   font-weight: bold;
 
   }
 
   &__intro2 {
     font-size: 20px ;
     line-height: 20px;
+    font-weight: medium;
     color: #000000; 
-    font-family: Oswald;
     padding-left: 15px;
 
    }
 
    &__intro {
-    
     height: 56px;
     text-align: justify;
     justify-content: left;
     display: block;
-    // flex-wrap: wrap;
-    margin-bottom: 5%;
-    // background-color: blanchedalmond ;
     border-left: 5px solid #9418B2;
     margin: 0 0 30px 0;
+
    }
 
 }
