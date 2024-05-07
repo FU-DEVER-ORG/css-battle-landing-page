@@ -3,6 +3,7 @@ import { Oswald } from 'next/font/google';
 import LandingLayout from '@/components/core/layouts/LandingLayout';
 
 import './globals.css';
+import React from 'react';
 
 const oswald = Oswald({ subsets: ['latin'] });
 
