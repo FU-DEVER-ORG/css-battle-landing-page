@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-import Top2 from "@public/cam_nghi/player2.png";
-import Top1 from '@public/cam_nghi/player1.png';
-import Top3 from '@public/cam_nghi/player3.png';
+import Player2 from '@/public/cam_nghi/player2.png';
+import PLayer1 from '@/public/cam_nghi/player1.png';
+import PLayer3 from '@/public/cam_nghi/player3.png';
 
 import * as styles from './styles.module.scss';
 
@@ -19,16 +19,16 @@ function Retro() {
         <div className={styles['contact__outimage']}>
           <Image
           className={styles['contact__image']} width={400} height={400} 
-          src={Top2}
+          src={Player2}
           alt="Top2" />
 
           <Image 
-          src={Top1}
+          src={PLayer1}
           className={styles['contact__image']} width={400} height={400} 
           alt="Top1" />
 
           <Image 
-          src={Top3} 
+          src={PLayer3} 
           className={styles['contact__image']} width={400} height={400} 
           alt="Top3" />
         
