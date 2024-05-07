@@ -41,8 +41,8 @@
     background: radial-gradient(50% 50% at 50% 50%, #780986 0%, #43064d 100%);
 
     @include mobile {
-      gap: 30px;
-      padding: 10px 15px;
+      gap: 20px;
+      padding: 10px 0px;
       height: max-content;
     }
 
@@ -56,8 +56,8 @@
       object-fit: cover;
 
       @include mobile {
-        height: 60%;
-        width: 20%;
+        height: 20%;
+        width: 12%;
       }
 
       @include tablet {
@@ -70,8 +70,8 @@
       object-fit: cover;
 
       @include mobile {
-        height: 40%;
-        width: 40%;
+        height: 20%;
+        width: 25%;
       }
 
       @include tablet {
