@@ -10,7 +10,7 @@ import * as styles from './styles.module.scss';
 function Organization() {
   return (
     <section className={styles['org']}>
-      <div className={styles['container']}>
+      <div className="container">
         <h3 className={styles['org__title']}>ĐƠN VỊ TỔ CHỨC</h3>
 
         <div className={styles['org__image']}>
