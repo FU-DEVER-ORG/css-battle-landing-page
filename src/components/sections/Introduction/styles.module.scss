@@ -34,10 +34,11 @@
   }
   
   &__content1 {
-    width: 800px;
+    width: 980px;
     height: 48px;
     margin: 0 auto;
-
+    padding-top: 10px;
+    
  
     font-size: 16px;
     font-weight: 400;
@@ -45,6 +46,10 @@
     text-align: center;
   }
   &__content2 {
+    width: 980px;
+    height: 24px;
+    margin: 0 auto;
+    padding-top: 10px;
     font-size: 16px;
     font-weight: 400;
     line-height: 23.71px;
