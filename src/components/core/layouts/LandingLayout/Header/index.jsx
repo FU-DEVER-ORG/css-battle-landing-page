@@ -1,22 +1,28 @@
-/* eslint-disable @next/next/no-img-element */
 import styles from './styles.module.scss';
-import Image from 'next/image';
 
 function Header() {
   return (
     <header className={styles['header']}>
-      <div className="container">
-        <div id="logo">
-          <img
-            id="logo-logo"
-            src="logo-clb.jpg"
-            width={500}
-            height={500}
-            alt="logoclb"
-          />
-          <span id="text-logo">CSS Battle</span>
-          <span id="year-logo">--2024--</span>
-        </div>
+      <div className="header__logo">
+        <p className="header__logo__p">CSS BATTLE</p>
+        <p className="header__logo__p">--2024--</p>
+      </div>
+      <nav className="header__menuBar">
+        <a href="" className="menuBar">
+          Giới thiệu
+        </a>
+        <a href="" className="menuBar">
+          Giải thưởng
+        </a>
+        <a href="" className="menuBar">
+          Timeline cuộc thi
+        </a>
+        <a href="" className="menuBar">
+          Thể lệ thi
+        </a>
+      </nav>
+      <div className="header__register">
+        <button>Đăng ký ngay</button>
       </div>
     </header>
   );

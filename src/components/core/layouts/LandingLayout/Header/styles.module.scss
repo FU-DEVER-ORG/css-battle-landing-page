@@ -1,11 +1,31 @@
-.header {
-  background-color: aqua;
-  padding: 20px 0;
-}
+@import '_variables';
+@import '_mixins';
 
-#logo {
+.header {
+  margin: 0 auto;
+  width: 1440px;
+  box-sizing: border-box;
+  padding: 20px 80px 20px 80px;
   display: grid;
-  grid-template-areas:
-  "logo-logo text-logo"
-  "logo-logo year-logo";
+  grid-template-columns: 113px auto 141px;
+
+  background-color: #ffff;
+  padding: 20px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  font-family: Oswald;
+
+  &__logo {
+    width: 113px;
+    height: 60px;
+    display: grid;
+    color: #9418b2;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
