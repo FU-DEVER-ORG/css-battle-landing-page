@@ -3,12 +3,12 @@
 .org {
   position: relative;
 
-  margin-bottom: 200px;
+  margin-bottom: 10em;
   @include mobile {
-    margin-bottom: 50px;
+    margin-bottom: 12%;
   }
   @include tablet {
-    margin-bottom: 120px;
+    margin-bottom: 15%;
   }
 
   display: flex;
