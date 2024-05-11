@@ -12,7 +12,6 @@ function Organization() {
     <section className={styles['org']}>
       <div className="container">
         <h3 className={styles['org__title']}>ĐƠN VỊ TỔ CHỨC</h3>
-
         <div className={styles['org__image']}>
           <Image
             className={styles['image__logo--content']}
