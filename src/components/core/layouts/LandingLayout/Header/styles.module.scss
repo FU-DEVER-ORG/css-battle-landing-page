@@ -1,31 +1,72 @@
-@import '_variables';
-@import '_mixins';
-
 .header {
+  background-color: #ffff;
   margin: 0 auto;
   width: 1440px;
+  height: 88px;
   box-sizing: border-box;
   padding: 20px 80px 20px 80px;
-  display: grid;
-  grid-template-columns: 113px auto 141px;
 
-  background-color: #ffff;
-  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 
-  img {
-    max-width: 100%;
-    max-height: 100%;
+  .logo {
+    box-sizing: border-box;
+    color: #9418b2;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &_element_1 {
+      text-wrap: nowrap;
+      font-family: Oswald;
+      font-size: 24px;
+      font-weight: 1000;
+      line-height: 24px;
+      text-align: left;
+    }
+    &_element_2 {
+      font-family: Oswald;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: center;
+    }
   }
 
-  font-family: Oswald;
-
-  &__logo {
-    width: 113px;
-    height: 60px;
+  .menubar {
     display: grid;
-    color: #9418b2;
+    grid-template-columns: repeat(4, 1fr);
+
+    line-height: 24px;
+
+    &_element {
+      justify-self: center;
+      text-align: center;
+
+      font-size: 16px;
+      font-weight: 510;
+
+      font-family: Oswald;
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+  .register {
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.71px;
     text-align: center;
-    grid-column: 2;
-    grid-row: 1;
+
+    width: Hug (141px) px;
+    height: Hug (40px) px;
+    padding: 8px 32px 8px 32px;
+    gap: 10px;
+    opacity: 0px;
+    background: #9418b2;
+    box-shadow: 0px 0px 16px 0px #6424b2;
+    color: white;
   }
 }

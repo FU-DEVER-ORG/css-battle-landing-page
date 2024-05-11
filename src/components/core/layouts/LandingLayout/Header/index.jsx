@@ -3,27 +3,25 @@ import styles from './styles.module.scss';
 function Header() {
   return (
     <header className={styles['header']}>
-      <div className="header__logo">
-        <p className="header__logo__p">CSS BATTLE</p>
-        <p className="header__logo__p">--2024--</p>
+      <div className={styles['logo']}>
+        <div className={styles['logo_element_1']}>CSS BATTLE</div>
+        <div className={styles['logo_element_2']}>--2024--</div>
       </div>
-      <nav className="header__menuBar">
-        <a href="" className="menuBar">
+      <nav className={styles['menubar']}>
+        <a href="" className={styles['menubar_element']}>
           Giới thiệu
         </a>
-        <a href="" className="menuBar">
+        <a href="" className={styles['menubar_element']}>
           Giải thưởng
         </a>
-        <a href="" className="menuBar">
+        <a href="" className={styles['menubar_element']}>
           Timeline cuộc thi
         </a>
-        <a href="" className="menuBar">
+        <a href="" className={styles['menubar_element']}>
           Thể lệ thi
         </a>
       </nav>
-      <div className="header__register">
-        <button>Đăng ký ngay</button>
-      </div>
+      <button className={styles['register']}>Đăng ký ngay</button>
     </header>
   );
 }
