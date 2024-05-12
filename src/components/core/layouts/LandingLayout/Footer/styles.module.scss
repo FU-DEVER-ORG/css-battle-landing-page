@@ -1,5 +1,29 @@
 .footer {
-  background-color: aqua;
+  background-image: url(/footer/background.png);
+  width: 1451px;
+  height: 409px;
+  top: 6843px;
+  gap: 0px;
+  opacity: 0px;
+  justify-self: center;
 
   padding: 20px 0;
+
+  .register {
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.71px;
+    text-align: center;
+    text-decoration: none;
+
+    width: Hug (141px) px;
+    height: Hug (40px) px;
+    padding: 8px 32px 8px 32px;
+    gap: 10px;
+    opacity: 0px;
+    background: #9418b2;
+    box-shadow: 0px 0px 16px 0px #6424b2;
+    color: white;
+  }
 }
