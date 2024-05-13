@@ -86,7 +86,7 @@
     @include tablet {
       margin: 0%;
       font-size: 28px;
-      line-height: 25px;
+      line-height: 28Spx;
 
     } 
 
@@ -94,7 +94,7 @@
 
   &__intro2 {
     font-size: 20px ;
-    line-height: 20px;
+    line-height: 32px;
     font-weight: 400;
     color: #000000; 
     padding-left: 15px;
@@ -102,13 +102,13 @@
     @include mobile {
       margin: 0%;
       font-size: 12px;
-      line-height: 20px;
+      line-height: 28px;
     }
   
       @include tablet {
         margin: 0%;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 32px;
 
       } 
   
