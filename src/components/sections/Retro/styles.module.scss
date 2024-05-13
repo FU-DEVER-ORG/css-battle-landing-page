@@ -1,3 +1,5 @@
+@import './src/styles/styles.mixins.scss';
+
 .contact {
   background-color: #ffffff;
   padding: 60px 0;
@@ -7,28 +9,64 @@
     line-height: 23.71px;
     font-weight: 400;
     color: #000000;
-    margin: 40px 0 0 0;
+    margin: 20px 0 0 0;
     
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include mobile {
+      margin: 10px 0 0 0;
+      font-size: 12px;
+    }
+
+    @include tablet {
+      margin: 10px 0 0 0;
+      font-size: 14px;
+    }
   }
 
   &__outimage {
     width: 1280px;
     height: 400px;
+    
+    
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     
+    @include mobile {
+      padding: 0px 0px;
+      height: max-content;
+    }
+
+    @include tablet {
+      padding: 0px 0px;
+      height: max-content;
+    }
   }
 
   &__image {
-    border: 2px solid #333232;
-    margin: 20px;
-    transition: 400ms;
+    border: 2px solid;
+    margin: 15px;
+    max-width: 100%;
+    
+    object-fit: cover;
 
+    @include mobile {
+      width: 12%;
+      height: 20%;
+      margin: 10px;
+
+    }
+
+    @include tablet {
+      width: 20%;
+      height: 60%;
+      margin: 13px;
+
+    }
   } 
 
   &__intro1 {
@@ -37,6 +75,20 @@
    color: #9418B2; 
    padding-left: 15px;
    font-weight: 400;
+
+   @include mobile {
+    margin: 0%;
+    font-size: 24px;
+    line-height: 25px;
+
+  }
+
+    @include tablet {
+      margin: 0%;
+      font-size: 28px;
+      line-height: 25px;
+
+    } 
 
   }
 
@@ -47,16 +99,40 @@
     color: #000000; 
     padding-left: 15px;
 
+    @include mobile {
+      margin: 0%;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  
+      @include tablet {
+        margin: 0%;
+        font-size: 16px;
+        line-height: 30px;
+
+      } 
+  
    }
 
    &__intro {
     height: 56px;
     text-align: justify;
-    justify-content: left;
-    display: block;
+    justify-content: center;
+    display: flexbox;
     border-left: 5px solid #9418B2;
-    margin: 0 0 30px 0;
 
+    margin: 0 0 20px 0;
+
+    @include mobile {
+      margin: 0 0 10px 0;
+      height: 44px;
+    }
+  
+    @include tablet {
+        height: 50px;
+        margin: 0 0 20px 0;
+    } 
+  
    }
 
 }
