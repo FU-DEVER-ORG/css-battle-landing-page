@@ -21,7 +21,10 @@ function Header() {
           Thể lệ thi
         </a>
       </nav>
-      <a href="" className={styles['register']}>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc1KNczkcH68Uxgk09WR6eEpbqUyk5ASEVzLDFCZGKNA3pQ7A/viewform?usp=sf_link"
+        className={styles['register']}
+      >
         Đăng ký ngay
       </a>
     </header>
