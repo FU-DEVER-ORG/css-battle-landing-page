@@ -1,8 +1,19 @@
+@mixin menubar_element() {
+  justify-self: center;
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 510;
+
+  color: #000000;
+  text-decoration: none;
+}
+
 .header {
   background-color: #ffff;
   margin: 0 auto;
-  width: 1440px;
-  height: 88px;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
   padding: 20px 80px 20px 80px;
 
@@ -11,7 +22,19 @@
   align-items: center;
   justify-content: space-around;
 
+  .over_play {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+  }
   .logo {
+    user-select: none;
     text-decoration: none;
     box-sizing: border-box;
     color: #9418b2;
@@ -34,21 +57,30 @@
     }
   }
 
-  .menubar {
+  .menubar_pc {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
     line-height: 24px;
 
     &_element {
-      justify-self: center;
-      text-align: center;
+      @include menubar_element();
+    }
+  }
 
-      font-size: 16px;
-      font-weight: 510;
-
-      color: #000000;
-      text-decoration: none;
+  .nav_show {
+    display: none;
+    width: 35px;
+    height: 35px;
+    color: #9418b2;
+  }
+  .menubar_mobile {
+    display: none;
+    .nav_close {
+      display: none;
+      width: 35px;
+      height: 35px;
+      color: #9418b2;
     }
   }
   .register {
@@ -66,5 +98,53 @@
     background: #9418b2;
     box-shadow: 0px 0px 16px 0px #6424b2;
     color: white;
+  }
+}
+/*Mobile*/
+@media (max-width: 480px) {
+  .header {
+    justify-content: space-between;
+    gap: 0px;
+    .register {
+      display: none;
+    }
+    .menubar_pc {
+      display: none;
+    }
+    .nav_show {
+      display: block;
+    }
+    .menubar_mobile {
+      position: fixed;
+      top: 5%;
+      bottom: 5%;
+      right: 5%;
+      max-width: 1000px;
+      min-width: 200px;
+      background-color: rgba(255, 255, 255);
+      border-radius: 5%;
+      display: flex;
+      flex-direction: column;
+      gap: 10%;
+      &_element {
+        @include menubar_element();
+      }
+    }
+  }
+}
+/*Tablet*/
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+    gap: 0px;
+    .register {
+      display: none;
+    }
+    .menubar_pc {
+      display: none;
+    }
+    .nav_show {
+      display: block;
+    }
   }
 }
