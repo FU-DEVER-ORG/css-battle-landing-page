@@ -10,10 +10,10 @@ function Retro() {
   return (
     <section className={styles['contact']}>
       <div className="container">
+        
         <div className={styles['contact__intro']}>
           <h3 className={styles['contact__intro1']}>RETRO</h3>
           <h3 className={styles['contact__intro2']}>Cảm nghĩ</h3>
-          
        </div>
 
         <div className={styles['contact__outimage']}>

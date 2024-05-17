@@ -1,9 +1,11 @@
+@import '/src/styles/styles.mixins.scss';
 
-@import './src/styles/styles.mixins.scss';
-
+  
 .contact {
   background-color: #ffffff;
   padding: 60px 0;
+
+  
 
   &__title {
     font-size: 16px;
@@ -80,14 +82,14 @@
    @include mobile {
     margin: 0%;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 25px;
 
   }
 
     @include tablet {
       margin: 0%;
       font-size: 28px;
-      line-height: 30px;
+      line-height: 28Spx;
 
     } 
 
@@ -103,12 +105,12 @@
     @include mobile {
       margin: 0%;
       font-size: 12px;
-      line-height: 30px;
+      line-height: 28px;
     }
   
       @include tablet {
         margin: 0%;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 32px;
 
       } 
@@ -130,10 +132,11 @@
     }
   
     @include tablet {
-        height: 52px;
+        height: 50px;
         margin: 0 0 20px 0;
     } 
   
    }
 
 }
+
