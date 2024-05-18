@@ -1,12 +1,22 @@
+$default_color: #9418b2;
+
+@mixin icon_style() {
+  color: $default_color;
+}
+
 @mixin menubar_element() {
   justify-self: center;
   text-align: center;
 
   font-size: 16px;
-  font-weight: 510;
+  font-weight: 400;
 
   color: #000000;
   text-decoration: none;
+}
+
+@mixin menubar_hover {
+  color: $default_color;
 }
 
 .header {
@@ -15,29 +25,23 @@
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding: 20px 80px 20px 80px;
+  padding: 20px 20px;
+  height: 90px;
+  gap: 30px;
+
+  position: fixed;
+  top: 0;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 
-  .over_play {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgb(0, 0, 0, 0.4);
-  }
   .logo {
     user-select: none;
     text-decoration: none;
     box-sizing: border-box;
-    color: #9418b2;
+    color: $default_color;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -57,32 +61,22 @@
     }
   }
 
-  .menubar_pc {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  .menubar {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 
     line-height: 24px;
 
     &_element {
       @include menubar_element();
+
+      &:hover {
+        @include menubar_hover();
+      }
     }
   }
 
-  .nav_show {
-    display: none;
-    width: 35px;
-    height: 35px;
-    color: #9418b2;
-  }
-  .menubar_mobile {
-    display: none;
-    .nav_close {
-      display: none;
-      width: 35px;
-      height: 35px;
-      color: #9418b2;
-    }
-  }
   .register {
     font-size: 16px;
     font-weight: 400;
@@ -100,51 +94,34 @@
     color: white;
   }
 }
+
+.icon {
+  display: none;
+}
+
 /*Mobile*/
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   .header {
-    justify-content: space-between;
-    gap: 0px;
-    .register {
-      display: none;
-    }
-    .menubar_pc {
-      display: none;
-    }
-    .nav_show {
+    display: none;
+  }
+  .icon {
+    display: flex;
+    flex-direction: row-reverse;
+    @include icon_style();
+    &_open {
       display: block;
     }
-    .menubar_mobile {
-      position: fixed;
-      top: 5%;
-      bottom: 5%;
-      right: 5%;
-      max-width: 1000px;
-      min-width: 200px;
-      background-color: rgba(255, 255, 255);
-      border-radius: 5%;
-      display: flex;
-      flex-direction: column;
-      gap: 10%;
-      &_element {
-        @include menubar_element();
-      }
+    &_close {
+      display: block;
     }
   }
 }
+
 /*Tablet*/
 @media (max-width: 768px) {
   .header {
+    padding: 0px 20px;
+
     justify-content: space-between;
-    gap: 0px;
-    .register {
-      display: none;
-    }
-    .menubar_pc {
-      display: none;
-    }
-    .nav_show {
-      display: block;
-    }
   }
 }
