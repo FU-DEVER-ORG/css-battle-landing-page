@@ -9,9 +9,7 @@ function Prizes() {
           <h3 className={styles.contact__title2}>Phần thưởng đầy hấp dẫn cho các chiến binh</h3>
         </div>
         <div>
-          <img src="/photo prizes/Rectangle 143.png" alt="prizes" className={styles.image} />
-          <img src="/photo prizes/Rectangle 142.png" alt="prizes" className={styles.image1} />
-          <img src="/photo prizes/Rectangle 141.png" alt="prizes" className={styles.image2} />
+          <img src="/photo prizes/prizes.png" alt="prizes" className={styles.image} />  
         </div>
         <div className={styles.boxContainer}>
           <div className={styles.box}>
