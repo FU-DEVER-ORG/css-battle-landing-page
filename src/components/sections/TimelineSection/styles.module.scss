@@ -8,7 +8,7 @@
     margin-bottom: 20px;
     display: flex;
     text-align: justify;
-    justify-content:  center;
+    justify-content: center;
     width: fit-content;
     box-sizing: border-box;
   }
@@ -195,11 +195,15 @@
     display: inline-flex;
     width: fit-content;
     align-items: center;
-    height: 100%;
   }
 
   &__bar2 {
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__bar3 {
     display: flex;
     flex-direction: column;
   }
