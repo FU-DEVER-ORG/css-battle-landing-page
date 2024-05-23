@@ -190,12 +190,17 @@
     padding: 20px 0;
     width: 1280px;
     display: inline-flex;
-    width: fit-content;
+    width: 100%;
     align-items: center;
   }
 
-  .timeline__bar_2{
+  &__bar_2 {
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__bar_1 {
     display: flex;
     flex-direction: column;
   }

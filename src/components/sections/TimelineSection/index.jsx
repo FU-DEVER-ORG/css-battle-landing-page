@@ -43,22 +43,22 @@ function TimelineSection() {
             </div>
           </div>
           <div className={styles['timeline__container-2']}>
-              <div className={styles['timeline_bar_3']}>
-                <div className={styles['timeline__rectangle1']}></div>
-                <div className={styles['timeline__triangle1']}></div>
-              </div>
-              <div className={styles['timeline__bar_2']}>
-                <div className={styles['timeline__triangle2']}></div>
-                <div className={styles['timeline__rectangle2']}></div>
-              </div>
-              <div className={styles['timeline_bar_3']}>
-                <div className={styles['timeline__rectangle3']}></div>
-                <div className={styles['timeline__triangle3']}></div>
-              </div>
-              <div className={styles['timeline__bar_2']}>
-                <div className={styles['timeline__triangle4']}></div>
-                <div className={styles['timeline__rectangle4']}></div>
-              </div>
+            <div className={styles['timeline_bar_1']}>
+              <div className={styles['timeline__rectangle1']}></div>
+              <div className={styles['timeline__triangle1']}></div>
+            </div>
+            <div className={styles['timeline__bar_2']}>
+              <div className={styles['timeline__triangle2']}></div>
+              <div className={styles['timeline__rectangle2']}></div>
+            </div>
+            <div className={styles['timeline_bar_1']}>
+              <div className={styles['timeline__rectangle3']}></div>
+              <div className={styles['timeline__triangle3']}></div>
+            </div>
+            <div className={styles['timeline__bar_2']}>
+              <div className={styles['timeline__triangle4']}></div>
+              <div className={styles['timeline__rectangle4']}></div>
+            </div>
           </div>
           <div className={styles['timeline__container-3']}>
             <div className={styles['timeline__group-up6']}>
