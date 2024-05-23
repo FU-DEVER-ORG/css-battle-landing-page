@@ -23,7 +23,7 @@ function TimelineSection() {
               <div className={styles['timeline__date1']}>09/06</div>
               <span className={styles['timeline__content_1']}>
                 <h6 className={styles['timeline__title3']}>Workshop hướng dẫn thi đấu</h6>
-                <p className={styles['timeline__title4']}> Tại đây, bạn sẽ được tìm hiểu về quy tắc cuộc thi, cách thức nộp bài và những mẹo quan trọng để vượt qua các thử thách CSS.
+                <p className={styles['timeline__title4']}>Tìm hiểu về quy tắc cuộc thi, cách thức nộp bài và những mẹo quan trọng để vượt qua các thử thách CSS.
                 </p>
               </span>
             </div>
@@ -37,7 +37,7 @@ function TimelineSection() {
               <div className={styles['timeline__date2']}>23/06</div>
               <span className={styles['timeline__content_1']}>
                 <h6 className={styles['timeline__title5']}>Vòng chung kết giải đấu</h6>
-                <p className={styles['timeline__title4']}>Vòng chung kết sẽ là cuộc đối đầu quyết định, nơi những "Chiến thần CSS" tài ba nhất sẽ tranh tài để tìm ra vị vua CSS thực sự của "CSS Battle".
+                <p className={styles['timeline__title4']}>Cuộc đối đầu quyết định, tìm ra vị vua CSS thực sự của "CSS Battle".
                 </p>
               </span>
             </div>
@@ -67,7 +67,7 @@ function TimelineSection() {
               <div className={styles['timeline__date3']}>25/05 - 05/06</div>
               <span className={styles['timeline__content_1']}>
                 <h6 className={styles['timeline__title6']}>Nhận đơn đăng ký</h6>
-                <p className={styles['timeline__title4']}>Hãy tranh thủ đăng ký ngay để không bỏ lỡ cơ hội tham gia cuộc thi đầy hấp dẫn này. Đơn đăng ký sẽ được tiếp nhận trong khoảng thời gian trên để đảm bảo mọi người có đủ thời gian chuẩn bị và tham gia.
+                <p className={styles['timeline__title4']}>Đăng ký ngay để không bỏ lỡ cơ hội tham gia cuộc thi đầy hấp dẫn này.
                 </p>
               </span>
             </div>
@@ -81,7 +81,8 @@ function TimelineSection() {
               <div className={styles['timeline__date4']}>16/06</div>
               <span className={styles['timeline__content_1']}>
                 <h6 className={styles['timeline__title7']}>Vòng loại và bán kết giải đấu</h6>
-                <p className={styles['timeline__title4']}>Bước vào vòng loại và bán kết, các bạn sẽ đối mặt với những thử thách CSS đầy kịch tính và căng thẳng. Hãy chuẩn bị tinh thần và sẵn sàng để thể hiện tài năng của mình trong việc sử dụng CSS và chiến đấu để giành vé vào vòng chung kết.
+                <p className={styles['timeline__title4']}>Đối mặt với những thử thách CSS đầy kịch tính,
+                  chuẩn bị tinh thần và thể hiện tài năng trong sử dụng CSS.
                 </p>
               </span>
             </div>
