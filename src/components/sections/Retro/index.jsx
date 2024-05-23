@@ -1,10 +1,8 @@
-
 import * as styles from './styles.module.scss';
 
 function Retro() {
   return (
-    <section className={styles['contact']}>
-      
+    <section className={styles['contact']}> 
     </section>
   );
 }
