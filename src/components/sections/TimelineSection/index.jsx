@@ -1,13 +1,10 @@
-import Image from 'next/image';
-
-import timeline from '@/public/timeline/timelinebar.png';
 
 import * as styles from './styles.module.scss';
 
 function TimelineSection() {
   return (
     <section className={styles['timeline']}>
-      <div className={styles['container']}>
+      <div className="container">
 
         <div className={styles['timeline__frame']}>
           <div className={styles['timeline__hinh']}></div>
@@ -51,18 +48,35 @@ function TimelineSection() {
                 <p className={styles['timeline__title4']}>Vòng chung kết sẽ là cuộc đối đầu quyết định, nơi những "Chiến thần CSS" tài ba nhất sẽ tranh tài để tìm ra vị vua CSS thực sự của "CSS Battle".
                 </p>
               </span>
-
             </div>
-
 
           </div>
 
           <div className={styles['timeline__container-2']}>
-            <Image
-              src={timeline}
-              className={styles['timeline__imgage']}
-              alt="Bar" />
 
+            <div className={styles['timeline__bar1']}>
+
+              <div className={styles['timeline__bar3']}>
+                <div className={styles['timeline__rectangle1']}></div>
+                <div className={styles['timeline__triangle1']}></div>
+              </div>
+
+              <div className={styles['timeline__bar2']}>
+                <div className={styles['timeline__triangle2']}></div>
+                <div className={styles['timeline__rectangle2']}></div>
+              </div>
+
+              <div className={styles['timeline__bar3']}>
+                <div className={styles['timeline__rectangle3']}></div>
+                <div className={styles['timeline__triangle3']}></div>
+              </div>
+
+              <div className={styles['timeline__bar2']}>
+                <div className={styles['timeline__triangle4']}></div>
+                <div className={styles['timeline__rectangle4']}></div>
+              </div>
+
+            </div>
           </div>
 
           <div className={styles['timeline__container-3']}>
@@ -102,7 +116,7 @@ function TimelineSection() {
           </div>
 
         </div>
-
+    
       </div>
     </section>
 

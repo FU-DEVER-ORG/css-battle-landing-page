@@ -4,20 +4,11 @@
   background-color: #ffffff;
   padding: 60px 0;
 
-  .container {
-    max-width: 1440px;
-    width: 100%;
-
-    margin: 0 auto;
-
-    padding: 0 80px;
-  }
-
   &__frame {
     margin-bottom: 20px;
     display: flex;
     text-align: justify;
-    justify-content: center;
+    justify-content:  center;
     width: fit-content;
     box-sizing: border-box;
   }
@@ -53,21 +44,20 @@
   &__group {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 1280px;
     box-sizing: border-box;
     margin-top: 50px;
   }
 
   &__container-1 {
-    margin: 0 5.4px 25px 100px;
-    display: flex;
+    margin: 0 0 25px 90px;
+    display: inline-flex;
     flex-direction: row;
-    width: fit-content;
-    box-sizing: border-box;
+    width: 1280px;
   }
 
   &__group-up1 {
-    margin: 0 105px 15px 0;
+    margin: 0 90px 15px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,7 +100,7 @@
   }
 
   &__group-up3 {
-    margin: 0 105px 15px 0;
+    margin: 0 90px 15px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +127,7 @@
   }
 
   &__group-up2 {
-    margin: 90px 105px 0 0;
+    margin: 90px 90px 0 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,7 +138,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 29.64px;
-    color: #630B6F;
+    color: #630b6f;
     text-align: justify;
   }
 
@@ -171,7 +161,7 @@
   }
 
   &__group-up4 {
-    margin-top: 90px;
+    margin: 90px 0 0 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,10 +188,82 @@
 
   &__container-2 {
     padding: 20px 0;
+    width: 1280px;
   }
-  &__imgage {
-    height: 110px;
-    width: 100%;
+
+  &__bar1 {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__bar2 {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__rectangle1 {
+    width: 320px;
+    height: 55px;
+    background-color: #43064d;
+    border-radius: 20px 0 0 20px;
+  }
+
+  &__triangle1 {
+    width: 0;
+    height: 0;
+    border-top: 30px solid #43064d;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin-left: 140px;
+  }
+
+  &__rectangle2 {
+    width: 320px;
+    height: 55px;
+    background-color: #5a0c65;
+  }
+
+  &__triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #5a0c65;
+    margin-left: 150px;
+  }
+
+  &__rectangle3 {
+    width: 320px;
+    height: 55px;
+    background-color: #820c91;
+  }
+
+  &__triangle3 {
+    width: 0;
+    height: 0;
+    border-top: 30px solid #820c91;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin-left: 150px;
+  }
+
+  &__rectangle4 {
+    width: 320px;
+    height: 55px;
+    border-radius: 0 20px 20px 0;
+    background-color: #a409b7;
+  }
+
+  &__triangle4 {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #a409b7;
+    margin-left: 155px;
   }
 
   &__content_1 {
@@ -214,9 +276,9 @@
 
   &__container-3 {
     margin: 25px 6px 0 0;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    width: fit-content;
+    width: 1280px;
     box-sizing: border-box;
   }
 
@@ -232,7 +294,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 29.64px;
-    color: #3D0C45;
+    color: #3d0c45;
     text-align: justify;
   }
 
@@ -258,7 +320,7 @@
 
   &__circle-3 {
     border-radius: 100px;
-    background: #630B6F;
+    background: #630b6f;
     margin-top: 20px;
     display: flex;
     padding: 25px 0 25px 0;
@@ -274,7 +336,7 @@
   }
 
   &__line3 {
-    background:#630B6F;
+    background: #630b6f;
     margin-left: 3px;
     width: 3px;
     height: 84px;
@@ -292,7 +354,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 29.64px;
-    color: #820C91;
+    color: #820c91;
     text-align: justify;
   }
 
@@ -301,7 +363,7 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 35.57px;
-    color: #820C91;
+    color: #820c91;
   }
 
   &__group-up8 {
@@ -316,7 +378,7 @@
 
   &__circle-4 {
     border-radius: 100px;
-    background:#A409B7;
+    background: #a409b7;
     margin-top: 20px;
     display: flex;
     padding: 25px 0 25px 0;
@@ -332,7 +394,7 @@
   }
 
   &__line4 {
-    background:#A409B7;
+    background: #a409b7;
     margin-left: 3px;
     width: 3px;
     height: 84px;
