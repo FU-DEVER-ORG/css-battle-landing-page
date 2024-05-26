@@ -1,5 +1,146 @@
-.footer {
-  background-color: aqua;
+$textColor: #ffff;
 
-  padding: 20px 0;
+@mixin flexTable() {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer {
+  color: $textColor;
+
+  .container {
+    background-image: url('../../../../../../public/footer/background.png');
+
+    background: linear-gradient(
+      180deg,
+      #00050e 22.39%,
+      rgba(0, 5, 14, 0.5) 100%
+    );
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin: 0 auto;
+    aspect-ratio: 1451 / 408;
+    width: 100%;
+    height: 408px;
+    top: 7251px;
+    left: 1445px;
+    gap: 0px;
+    opacity: 0px;
+
+    display: grid;
+    grid-template-areas:
+      'main'
+      'detail ';
+
+    .main {
+      grid-area: main;
+
+      gap: 24px;
+      opacity: 0px;
+      padding: 40px 80px;
+
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+
+      &_title {
+        font-family: Oswald;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 35.57px;
+        text-align: center;
+      }
+
+      &_register {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.71px;
+        text-align: center;
+        text-decoration: none;
+
+        width: Hug (141px) px;
+        height: Hug (40px) px;
+        padding: 8px 32px 8px 32px;
+        gap: 10px;
+        opacity: 0px;
+        background: #9418b2;
+        box-shadow: 0px 0px 16px 0px #6424b2;
+        color: white;
+      }
+    }
+
+    .detail {
+      grid-area: detail;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      padding: 40px 80px;
+
+      .copywrite {
+        grid-area: copywrite;
+
+        width: 297px;
+        height: 132px;
+        gap: 0px;
+        opacity: 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_logo {
+          user-select: none;
+          box-sizing: border-box;
+
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          width: 113px;
+
+          &_element_1 {
+            text-wrap: nowrap;
+            font-size: 24px;
+            font-weight: 1000;
+            line-height: 24px;
+            text-align: left;
+          }
+          &_element_2 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: center;
+          }
+        }
+      }
+
+      .contact {
+        grid-area: contact;
+        display: flex;
+        flex-direction: row;
+
+        &_idea {
+          @include flexTable();
+        }
+
+        &_content {
+          @include flexTable();
+
+          color: $textColor;
+          text-decoration: none;
+
+          a {
+            color: $textColor;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
 }
