@@ -18,13 +18,13 @@ function Footer() {
         </div>
         <div className={styles['detail']}>
           <div className={styles['copywrite']}>
-            <div className="copywrite_logo">
+            <div className={styles['copywrite_logo']}>
               <div className={styles['copywrite_logo_element_1']}>
                 CSS BATTLE
               </div>
               <div className={styles['copywrite_logo_element_2']}>--2024--</div>
             </div>
-            <div className="copywrite_author">
+            <div className={styles['copywrite_author']}>
               © Được Tổ Chức Bởi Câu lạc bộ lập trình FU-DEVER
             </div>
           </div>
