@@ -8,6 +8,7 @@ $textColor: #ffff;
 
 .footer {
   color: $textColor;
+  font-family: Oswald;
 
   width: auto;
   height: auto;
@@ -42,7 +43,6 @@ $textColor: #ffff;
       align-items: center;
 
       &_title {
-        font-family: Oswald;
         font-size: 24px;
         font-weight: 400;
         line-height: 35.57px;
