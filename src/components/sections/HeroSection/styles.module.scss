@@ -1,34 +1,31 @@
 .hero {
-  &_gap_box {
+  margin-top: 90px;
+  width: 100%;
+  height: 950.27px;
+  top: -3343.85px;
+  left: 882px;
+  overflow: hidden;
+  background-image: url(../../../../public/hero_section/br.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .cup {
+    width: 586px;
+    height: 640.54px;
+    top: -3163px;
+    left: 1340px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .title {
     width: 100%;
-    height: 90px;
+    background-color: #fff;
   }
 
-  background-color: #fcd9d9;
-
-  padding: 40px 0;
-
-  &__title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #000;
-
-    margin-bottom: 20px;
-  }
-
-  &__image {
-    width: 100%;
-    height: 200px;
-
-    background-color: rgb(255, 121, 121);
+  .founder {
   }
 }
 
 /*Mobile*/
 @media (max-width: 450px) {
-  .hero {
-    &_gap_box {
-      height: 220px;
-    }
-  }
 }
