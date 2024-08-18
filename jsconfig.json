@@ -2,8 +2,13 @@
   "compilerOptions": {
     "jsx": "react",
     "paths": {
+<<<<<<< HEAD
       "@/*": ["./src/*"],
       "@/public/*": ["./public/*"]
+=======
+      "@/*": ["./src/*"]
+      
+>>>>>>> c6ea1adb6dda7fb3a20ba391a9e984992bfdc759
     }
   }
 }
