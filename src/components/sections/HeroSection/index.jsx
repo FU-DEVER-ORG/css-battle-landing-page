@@ -1,17 +1,19 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from './styles.module.scss';
+import React from 'react';
+import image from '@img/hero_section/image.png';
 import Image from 'next/image';
 
 function HeroSection() {
   return (
     <section className={styles['hero']}>
-      <div className={styles['cup']}>
-        {/* <img src="/hero_section/cup.png" alt="Cup" /> */}
-      </div>
-      <div className={styles['title']}>
-        <div className={styles['title_1']}>CSS BATTLE 2024</div>
-        <div className={styles['title_2']}>Finding the king of CSS</div>
-      </div>
-      <div className="founder">Tổ chức bởi FU-DEVER</div>
+      <Image
+        className={styles['hero_img']}
+        src={image}
+        alt="hero_image"
+        width={1600}
+        height={900}
+      />
     </section>
   );
 }
