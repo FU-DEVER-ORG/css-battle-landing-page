@@ -77,6 +77,10 @@
   }
 
 @media (min-width : 1440px ) {
+  .box{
+    justify-content: center;
+    
+  }
   .box__box2{
     margin-inline:0 !important;
   }
@@ -150,7 +154,7 @@
   .box__box1,
   .box__box2,
   .box__box3 {
-    padding: 40px 10px;
+    padding: 40px 30px;
   }
 }
 
@@ -161,7 +165,7 @@
   .box__box1,
   .box__box2,
   .box__box3 {
-    padding: 20px 20px;
+    padding: 35px 20px;
   }
   .top {
     color: rgba(255, 255, 255, 1);
