@@ -31,6 +31,8 @@ $default_color: #9418b2;
 
   position: fixed;
   top: 0;
+  z-index: 99;
+
 
   display: flex;
   flex-direction: row;
@@ -53,6 +55,7 @@ $default_color: #9418b2;
       line-height: 24px;
       text-align: left;
     }
+
     &_element_2 {
       font-size: 18px;
       font-weight: 400;
@@ -90,27 +93,86 @@ $default_color: #9418b2;
     gap: 10px;
     opacity: 0px;
     background: #9418b2;
-    box-shadow: 0px 0px 16px 0px #6424b2;
     color: white;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 16px 0px #6424b2;
+
+    }
+
   }
 }
 
 .icon {
   display: none;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header .button {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 /*Mobile*/
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .header {
-    display: none;
+    .menubar_lg {
+      display: none;
+    }
   }
+
+  .menubar_sm {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    left: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    line-height: 24px;
+
+    transition: all 0.5s ease-in-out;
+
+    &_open {
+      top: 90px;
+      opacity: 1;
+
+    }
+
+    &_close {
+      top: -150px;
+      opacity: 0;
+    }
+
+    &_element {
+      @include menubar_element();
+
+      &:hover {
+        @include menubar_hover();
+      }
+    }
+  }
+
+
+
   .icon {
     display: flex;
     flex-direction: row-reverse;
     @include icon_style();
+
     &_open {
       display: block;
     }
+
     &_close {
       display: block;
     }
