@@ -3,10 +3,16 @@
     "jsx": "react",
     "paths": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "@/*": ["./src/*"],
       "@/public/*": ["./public/*"]
 =======
       "@/*": ["./src/*"]
+=======
+      "@/*": ["./src/*"],
+      "@img/*": ["./public/*"],
+
+>>>>>>> a69d80106d75b17e9f3c36a3c73e66a72e8f85a4
       
 >>>>>>> c6ea1adb6dda7fb3a20ba391a9e984992bfdc759
     }

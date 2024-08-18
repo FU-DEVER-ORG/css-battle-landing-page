@@ -1,13 +1,19 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from './styles.module.scss';
+import React from 'react';
+import image from '@img/hero_section/image.png';
+import Image from 'next/image';
 
 function HeroSection() {
   return (
     <section className={styles['hero']}>
-      <div className={styles['hero_gap_box']}></div>
-      <div className="container">
-        <h3 className={styles['hero__title']}>Hero</h3>
-        <div className={styles['hero__image']}>Image</div>
-      </div>
+      <Image
+        className={styles['hero_img']}
+        src={image}
+        alt="hero_image"
+        width={1600}
+        height={900}
+      />
     </section>
   );
 }
