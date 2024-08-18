@@ -10,6 +10,7 @@ function Header() {
   const handleClick = () => {
     setOpen(!isOpen);
   };
+
   return (
     <header>
       <div className={styles['header']}>
