@@ -18,16 +18,16 @@ function Header() {
           <div className={styles['logo_element_2']}>--2024--</div>
         </a>
         <nav className={styles['menubar_lg']}>
-          <a href="#Introduction" className={styles['menubar_element']}>
+          <a href="#Introduction" className={styles['menubar_lg_element']}>
             Giới thiệu
           </a>
-          <a href="#Prizes" className={styles['menubar_element']}>
+          <a href="#Prizes" className={styles['menubar_lg_element']}>
             Giải thưởng
           </a>
-          <a href="#TimelineSection" className={styles['menubar_element']}>
+          <a href="#TimelineSection" className={styles['menubar_lg_element']}>
             Timeline cuộc thi
           </a>
-          <a href="#CompetitionForm" className={styles['menubar_element']}>
+          <a href="#CompetitionForm" className={styles['menubar_lg_element']}>
             Thể lệ thi
           </a>
         </nav>
