@@ -32,7 +32,7 @@
     margin: 0 0 20px 0;
   }
 
-.contact-header-text {
+.contact-header-text2 {
       font-size: 32px;
       line-height: 32px;
       color: #9418B2; 
@@ -49,6 +49,23 @@
         line-height: 30px;
       } 
     }
+
+.contact-header-text {
+  font-size: 32px;
+  line-height: 32px;
+  color: #9418B2; 
+  font-weight: 400;
+  @media only screen and (max-width: 768px) {
+    margin: 0%;
+    font-size: 24px;
+    line-height: 24px;
+   }
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    margin: 0%;
+    font-size: 28px;
+    line-height: 30px;
+   } 
+}    
   
 .contact-header-text1 {
   font-size: 20px ;
@@ -121,16 +138,19 @@
   width: 33%;
   display: flex;
   align-items: start;
-  @media only screen and (max-width: 1024px) {
-    width: 100%;
-  }
-  
+  padding-top: -30%;
+
   @media only screen and (max-width: 768px) {
-    flex-direction: column;
-    }
+    width: 100%;
+    display: block;
+ }
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    width: 100%;
+  } 
   }
 
 .contact-main_button {
+    margin-top: 108px;
     background-color: #9418b2;
     box-shadow: 0px 0px 16px 0px #6424b2;
     color: #ffffff;
@@ -144,9 +164,11 @@
     border-left-style: hidden;
     border-bottom-style: hidden;
     font-family: unset;
-    margin-top: 108px;
-    z-index: 4;
-    position: relative;
+    @media only screen and (max-width: 768px) {
+      padding: auto;
+      margin-top: 0;
+      margin-left:32%;
+   } 
   }
 
 .contact-main_button:hover {
@@ -159,11 +181,9 @@
   left: 0px;
   top: 0px;
   margin: auto;
-  @media only screen and (max-width: 768px) {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  }
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+   height: 60%;
+  } 
 }
 
 .contact-section__stack {
@@ -172,10 +192,7 @@
     position: relative;
     flex: 1;
     @media only screen and (max-width: 768px) {
-      align-self: stretch;
-      width: 100%;
-      flex: unset;
-      margin-left: 0px;
+      display: none;
     }
   }
 
@@ -192,3 +209,4 @@
     transform: rotate(12deg);
     border-radius: 50%;
   }
+

@@ -91,6 +91,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,17 +106,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,6 +128,7 @@ q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -142,6 +148,33 @@ table {
   margin: 0 auto;
 
   padding: 0 80px;
+}
+
+@media only screen and (max-width: 1439px) and (min-width :1024px) {
+  .container {
+    padding: 0 60px;
+  }
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width :768px) {
+  .container {
+    padding: 0 60px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) and (min-width :640px) {
+  .container {
+    padding: 0 40px;
+  }
+
+}
+
+@media only screen and (max-width: 639px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 main {
