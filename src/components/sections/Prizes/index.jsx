@@ -13,13 +13,13 @@ function Prizes() {
         </div>
         <div className={styles.boxContainer}>
           <div className={styles.box}>
-            <div className={styles.box__box1}>
-              <h4 className={styles.top}>Giải nhì</h4>
-              <h4 className={styles.award}>1.500.000 VNĐ</h4>
-            </div>
             <div className={styles.box__box2}>
               <h4 className={styles.top}>Giải nhất</h4>
               <h4 className={styles.award}>2.000.000 VNĐ</h4>
+            </div>
+            <div className={styles.box__box1}>
+              <h4 className={styles.top}>Giải nhì</h4>
+              <h4 className={styles.award}>1.500.000 VNĐ</h4>
             </div>
             <div className={styles.box__box3}>
               <h4 className={styles.top}>Giải ba</h4>
