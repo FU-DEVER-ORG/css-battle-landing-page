@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 function Footer() {
   return (
     <footer className={styles['footer']}>
-      <div className={styles['container']}>
+      <div className="container">
         <div className={styles['main']}>
           <p className={styles['main_title']}>
             Đăng ký tham gia CSS Battle 2024 để chinh phục ngôi vương “The king
