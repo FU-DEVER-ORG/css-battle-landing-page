@@ -2,7 +2,7 @@ import * as styles from './styles.module.scss';
 
 function TimelineSection() {
   return (
-    <section className={styles['timeline']}>
+    <section id="TimelineSection" className={styles['timeline']}>
       <div className="container">
         <div className={styles['timeline__frame']}>
           <div className={styles['timeline__hinh']}></div>
