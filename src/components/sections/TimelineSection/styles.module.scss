@@ -8,8 +8,8 @@
     margin-bottom: 20px;
     display: flex;
     text-align: justify;
-    justify-content: center;
-    width: fit-content;
+    justify-content: flex-start;
+    width: 100%;
     box-sizing: border-box;
   }
 
@@ -17,7 +17,7 @@
     background: #9418b2;
     margin-right: 24px;
     height: 56px;
-    width: 4px;
+    min-width: 4px;
   }
 
   &__title {
@@ -42,38 +42,58 @@
   }
 
   &__group {
-    display: flex;
-    flex-direction: column;
-    width: 1280px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     margin-top: 50px;
+    @include desktop {
+      flex-direction: column;
+    }
   }
 
   &__container-1 {
-    margin: 0 0 25px 90px;
     display: inline-flex;
-    flex-direction: row;
-    width: 1280px;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+    align-items: center;
+    // gap: 2em;
+    @include desktop {
+      flex-direction: row;
+      width: 100%;
+      gap: 0;
+    }
   }
 
   &__group-up1 {
-    margin: 0 90px 15px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
-    height: fit-content;
-    box-sizing: border-box;
+    align-content: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+
+    border-bottom: #3d0c45 1px solid;
+
+    @include mobile {
+      height: 230px;
+      visibility: hidden;
+    }
+    @include desktop {
+      border: 0;
+      width: 25%;
+    }
   }
 
   &__circle-1 {
     border-radius: 100px;
     background: #3d0c45;
-    margin-bottom: 20px;
     display: flex;
     padding: 25px 0.5px 25px 0;
     width: 120px;
-    box-sizing: border-box;
+    margin-bottom: 20px;
   }
 
   &__number_1 {
@@ -93,45 +113,80 @@
   }
 
   &__line1 {
-    background: #3d0c45;
-    margin-left: 3px;
-    width: 3px;
-    height: 84px;
+    display: none;
+
+    @include desktop {
+      display: flex;
+      background: #3d0c45;
+      margin-left: 3px;
+      width: 3px;
+      height: 84px;
+    }
   }
 
   &__group-up3 {
-    margin: 0 90px 15px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
-    height: fit-content;
-    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    border-bottom: #820c91 1px solid;
+    @include mobile {
+      height: 270px;
+      visibility: hidden;
+    }
+    @include desktop {
+      width: 25%;
+      border: 0;
+    }
   }
 
   &__circle-2 {
     border-radius: 100px;
     background: #820c91;
-    margin-bottom: 20px;
     display: flex;
     padding: 25px 0.5px 25px 0;
     width: 120px;
-    box-sizing: border-box;
+    margin-bottom: 20px;
   }
 
   &__line2 {
-    background: #820c91;
-    margin-left: 3px;
-    width: 3px;
-    height: 84px;
+    display: none;
+
+    @include desktop {
+      display: flex;
+      background: #820c91;
+      margin-left: 3px;
+      width: 3px;
+      height: 84px;
+    }
   }
 
   &__group-up2 {
-    margin: 90px 90px 0 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    border-bottom: #630b6f 1px solid;
+
+    b {
+      font-weight: 700;
+      font-size: 25px;
+      margin-bottom: 5px;
+      color: #630b6f;
+    }
+    @include mobile {
+      margin-left: 100%;
+      height: 200px;
+    }
+    @include desktop {
+      width: 25%;
+      justify-content: flex-end;
+      border: 0;
+    }
   }
 
   &__title3 {
@@ -139,7 +194,6 @@
     font-size: 20px;
     line-height: 29.64px;
     color: #630b6f;
-    text-align: justify;
   }
 
   &__title4 {
@@ -161,11 +215,29 @@
   }
 
   &__group-up4 {
-    margin: 90px 0 0 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    border-bottom: #a409b7 1px solid;
+
+    b {
+      font-size: 25px;
+      margin-bottom: 5px;
+      font-weight: 700;
+      color: #a409b7;
+    }
+    @include mobile {
+      margin-left: 100%;
+      height: 200px;
+    }
+    @include desktop {
+      width: 25%;
+      justify-content: flex-end;
+      border: 0;
+    }
   }
 
   &__title5 {
@@ -173,7 +245,6 @@
     font-size: 20px;
     line-height: 29.64px;
     color: #a409b7;
-    text-align: justify;
   }
 
   &__date2 {
@@ -187,26 +258,34 @@
   }
 
   &__container-2 {
-    padding: 20px 0;
-    width: 1280px;
-    display: inline-flex;
-    width: max-content;
-    align-items: center;
+    display: none;
+
+    @include desktop {
+      padding: 20px 0;
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      box-sizing: border-box;
+    }
   }
 
   &__bar_2 {
+    width: 25%;
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   &__bar_1 {
+    width: 25%;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   &__rectangle1 {
-    width: 320px;
+    width: 100%;
     height: 55px;
     background-color: #43064d;
     border-radius: 20px 0 0 20px;
@@ -218,11 +297,13 @@
     border-top: 30px solid #43064d;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    margin-left: 140px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__rectangle2 {
-    width: 320px;
+    width: 100%;
     height: 55px;
     background-color: #5a0c65;
   }
@@ -233,11 +314,14 @@
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 30px solid #5a0c65;
-    margin-left: 150px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__rectangle3 {
-    width: 320px;
+    width: 100%;
+
     height: 55px;
     background-color: #820c91;
   }
@@ -248,11 +332,13 @@
     border-top: 30px solid #820c91;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    margin-left: 150px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__rectangle4 {
-    width: 320px;
+    width: 100%;
     height: 55px;
     border-radius: 0 20px 20px 0;
     background-color: #a409b7;
@@ -264,7 +350,9 @@
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 30px solid #a409b7;
-    margin-left: 155px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__content_1 {
@@ -276,19 +364,42 @@
   }
 
   &__container-3 {
-    margin: 25px 6px 0 0;
     display: inline-flex;
-    flex-direction: row;
-    width: 1280px;
+    flex-direction: column;
+    width: 50%;
     box-sizing: border-box;
+    align-items: center;
+
+    @include desktop {
+      flex-direction: row;
+      width: 100%;
+      gap: 0;
+    }
   }
 
   &__group-up6 {
-    margin: 0 105px 90px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    border-bottom: #3d0c45 1px solid;
+    height: 300px;
+    b {
+      font-size: 25px;
+      margin-bottom: 5px;
+      font-weight: 700;
+      color: #3d0c45;
+    }
+    @include mobile {
+      height: 220px;
+      margin-right: 100%;
+    }
+    @include desktop {
+      width: 25%;
+      justify-content: flex-start;
+      border: 0;
+    }
   }
 
   &__title6 {
@@ -296,7 +407,6 @@
     font-size: 20px;
     line-height: 29.64px;
     color: #3d0c45;
-    text-align: justify;
   }
 
   &__date3 {
@@ -306,26 +416,34 @@
     font-size: 24px;
     width: 132px;
     line-height: 35.57px;
-    color: #43064d;
+    color: #3d0c45;
   }
 
   &__group-up5 {
-    margin: 0 105px 15px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
-    height: fit-content;
-    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    border-bottom: #630b6f 1px solid;
+    @include mobile {
+      visibility: hidden;
+      height: 230px;
+    }
+    @include desktop {
+      width: 25%;
+      border: 0;
+    }
   }
 
   &__circle-3 {
     border-radius: 100px;
     background: #630b6f;
-    margin-top: 20px;
     display: flex;
     padding: 25px 0 25px 0;
     width: 120px;
+    margin-top: 20px;
   }
 
   &__number_3 {
@@ -337,18 +455,40 @@
   }
 
   &__line3 {
-    background: #630b6f;
-    margin-left: 3px;
-    width: 3px;
-    height: 84px;
+    display: none;
+
+    @include desktop {
+      display: flex;
+      background: #630b6f;
+      margin-left: 3px;
+      width: 3px;
+      height: 84px;
+    }
   }
 
   &__group-up7 {
-    margin: 0 105px 90px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
+    width: 100%;
+    border-bottom: #820c91 1px solid;
+    height: 300px;
+    justify-content: center;
+    b {
+      font-size: 25px;
+      margin-bottom: 5px;
+      font-weight: 700;
+      color: #820c91;
+    }
+    @include mobile {
+      height: 235px;
+      margin-right: 100%;
+    }
+    @include desktop {
+      width: 25%;
+      justify-content: flex-start;
+      border: 0;
+    }
   }
 
   &__title7 {
@@ -356,7 +496,6 @@
     font-size: 20px;
     line-height: 29.64px;
     color: #820c91;
-    text-align: justify;
   }
 
   &__date4 {
@@ -368,22 +507,30 @@
   }
 
   &__group-up8 {
-    margin: 0 100px 15px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
-    height: fit-content;
-    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    border-bottom: #a409b7 1px solid;
+    justify-content: center;
+    @include mobile {
+      height: 200px;
+      visibility: hidden;
+    }
+    @include desktop {
+      width: 25%;
+      border: 0;
+    }
   }
 
   &__circle-4 {
     border-radius: 100px;
     background: #a409b7;
-    margin-top: 20px;
     display: flex;
     padding: 25px 0 25px 0;
     width: 120px;
+    margin-top: 20px;
   }
 
   &__number_4 {
@@ -395,9 +542,13 @@
   }
 
   &__line4 {
-    background: #a409b7;
-    margin-left: 3px;
-    width: 3px;
-    height: 84px;
+    display: none;
+    @include desktop {
+      background: #a409b7;
+      margin-left: 3px;
+      width: 3px;
+      height: 84px;
+      display: flex;
+    }
   }
 }

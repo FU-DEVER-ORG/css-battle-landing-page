@@ -11,7 +11,9 @@ function TimelineSection() {
             <span className={styles['timeline__title2']}>Các giai đoạn cuộc thi</span>
           </div>
         </div>
+
         <div className={styles['timeline__group']}>
+
           <div className={styles['timeline__container-1']}>
             <div className={styles['timeline__group-up1']}>
               <div className={styles['timeline__circle-1']}>
@@ -20,6 +22,7 @@ function TimelineSection() {
               <div className={styles['timeline__line1']}></div>
             </div>
             <div className={styles['timeline__group-up2']}>
+              <b>II. Giai đoạn 2</b>
               <div className={styles['timeline__date1']}>09/06</div>
               <span className={styles['timeline__content_1']}>
                 <h6 className={styles['timeline__title3']}>Workshop hướng dẫn thi đấu</h6>
@@ -34,6 +37,7 @@ function TimelineSection() {
               <div className={styles['timeline__line2']}></div>
             </div>
             <div className={styles['timeline__group-up4']}>
+              <b>IV. Giai đoạn 4</b>
               <div className={styles['timeline__date2']}>23/06</div>
               <span className={styles['timeline__content_1']}>
                 <h6 className={styles['timeline__title5']}>Vòng chung kết giải đấu</h6>
@@ -42,8 +46,9 @@ function TimelineSection() {
               </span>
             </div>
           </div>
+
           <div className={styles['timeline__container-2']}>
-            <div className={styles['timeline_bar_1']}>
+            <div className={styles['timeline__bar_1']}>
               <div className={styles['timeline__rectangle1']}></div>
               <div className={styles['timeline__triangle1']}></div>
             </div>
@@ -51,7 +56,7 @@ function TimelineSection() {
               <div className={styles['timeline__triangle2']}></div>
               <div className={styles['timeline__rectangle2']}></div>
             </div>
-            <div className={styles['timeline_bar_1']}>
+            <div className={styles['timeline__bar_1']}>
               <div className={styles['timeline__rectangle3']}></div>
               <div className={styles['timeline__triangle3']}></div>
             </div>
@@ -60,8 +65,10 @@ function TimelineSection() {
               <div className={styles['timeline__rectangle4']}></div>
             </div>
           </div>
+
           <div className={styles['timeline__container-3']}>
             <div className={styles['timeline__group-up6']}>
+              <b>I. Giai đoạn 1</b>
               <div className={styles['timeline__date3']}>25/05 - 05/06</div>
               <span className={styles['timeline__content_1']}>
                 <h6 className={styles['timeline__title6']}>Nhận đơn đăng ký</h6>
@@ -76,6 +83,7 @@ function TimelineSection() {
               </div>
             </div>
             <div className={styles['timeline__group-up7']}>
+              <b>III. Giai đoạn 3</b>
               <div className={styles['timeline__date4']}>16/06</div>
               <span className={styles['timeline__content_1']}>
                 <h6 className={styles['timeline__title7']}>Vòng loại và bán kết giải đấu</h6>
