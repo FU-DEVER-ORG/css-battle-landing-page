@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 function HeroSection() {
   return (
-    <section className={styles['hero']}>
+    <section id="Introduction" className={styles['hero']}>
       <Image
         className={styles['hero_img']}
         src={image}
