@@ -150,6 +150,10 @@ table {
   padding: 0 80px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media only screen and (max-width: 1439px) and (min-width :1024px) {
   .container {
     padding: 0 60px;

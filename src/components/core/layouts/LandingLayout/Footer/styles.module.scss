@@ -98,6 +98,7 @@ $textColor: #ffff;
           line-height: 24px;
           text-align: left;
         }
+
         &_element_2 {
           text-wrap: wrap;
           font-size: 18px;
@@ -140,6 +141,16 @@ $textColor: #ffff;
 
 /*Tablet*/
 @media (max-width: 768px) {
+  .detail {
+    flex-direction: column-reverse !important;
+    align-content: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap : 40px !important;
+    .contact{
+      // width: 100%;
+    }
+  }
 }
 
 /*Mobile*/

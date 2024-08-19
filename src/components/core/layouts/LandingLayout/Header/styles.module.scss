@@ -21,21 +21,32 @@ $default_color: #9418b2;
 
 .header {
   background-color: #ffff;
-  margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 20px 20px;
-  height: 90px;
-  gap: 30px;
-
   position: fixed;
   top: 0;
   z-index: 99;
+  width: 100%;
+}
+
+.container_header {
+  background-color: #ffff;
+
+  margin: 0 auto;
+
+  max-width: 1440px;
+  width: 100%;
+
+  box-sizing: border-box;
+  padding: 20px 80px;
+  height: 90px;
+  gap: 30px;
+
+
+
 
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   .logo {
     user-select: none;
@@ -53,6 +64,7 @@ $default_color: #9418b2;
       line-height: 24px;
       text-align: left;
     }
+
     &_element_2 {
       font-size: 18px;
       font-weight: 400;
@@ -107,7 +119,7 @@ $default_color: #9418b2;
   cursor: pointer;
 }
 
-.header .button {
+.container_header .button {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -116,9 +128,10 @@ $default_color: #9418b2;
 .menubar_sm {
   display: none;
 }
+
 /*Mobile*/
 @media (max-width: 768px) {
-  .header {
+  .container_header {
     .menubar_lg {
       display: none;
     }
@@ -176,10 +189,25 @@ $default_color: #9418b2;
 }
 
 /*Tablet*/
-@media (max-width: 768px) {
-  .header {
-    padding: 0px 20px;
 
-    justify-content: space-between;
+
+@media only screen and (max-width: 1439px) and (min-width :768px) {
+  .container_header {
+    padding: 20px 60px;
+  }
+
+}
+
+
+@media only screen and (max-width: 767px) and (min-width :640px) {
+  .container_header {
+    padding: 20px 40px;
+  }
+
+}
+
+@media only screen and (max-width: 639px) {
+  .container_header {
+    padding: 20px 20px;
   }
 }

@@ -12,8 +12,8 @@ function Header() {
   };
 
   return (
-    <header>
-      <div className={styles['header']}>
+    <header className={styles['header']}>
+      <div className={styles['container_header']}>
         <a href="" className={styles['logo']}>
           <div className={styles['logo_element_1']}>CSS BATTLE</div>
           <div className={styles['logo_element_2']}>--2024--</div>

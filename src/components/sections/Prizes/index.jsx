@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 
 function Prizes() {
   return (
-    <section className={styles.contact}>
+    <section id="Prizes" className={styles.contact}>
       <div className="container">
         <div className={styles.contact__title}>
           <h3 className={styles.contact__title1}>CƠ CẤU GIẢI THƯỞNG</h3>
