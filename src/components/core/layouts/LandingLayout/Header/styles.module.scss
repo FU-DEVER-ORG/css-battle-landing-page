@@ -132,15 +132,19 @@ $default_color: #9418b2;
 /*Mobile*/
 @media (max-width: 768px) {
   .container_header {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+
     .menubar_lg {
       display: none;
     }
   }
 
   .menubar_sm {
-    position: fixed;
     width: 100%;
     background-color: white;
+    position: fixed;
     left: 0;
     z-index: 1;
 

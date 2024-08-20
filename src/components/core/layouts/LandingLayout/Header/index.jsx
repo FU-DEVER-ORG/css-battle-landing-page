@@ -1,16 +1,14 @@
 'use client';
 import styles from './styles.module.scss';
-import { FaBars } from 'react-icons/fa6';
-import { FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
+import HamburgerMenuIcon from './HamburgerMenu';
 
 function Header() {
-  const [isOpen, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleClick = () => {
-    setOpen(!isOpen);
+    setOpen(!open);
   };
-
   return (
     <header className={styles['header']}>
       <div className={styles['container_header']}>
@@ -40,16 +38,12 @@ function Header() {
             Đăng ký ngay
           </a>
           <button className={styles['icon']} onClick={handleClick}>
-            {isOpen ? (
-              <FaTimes className={styles['icon_close ']} size={30} />
-            ) : (
-              <FaBars className={styles['icon_open']} size={30} />
-            )}
+            <HamburgerMenuIcon open={open} />
           </button>
         </div>
       </div>
       <nav
-        className={`${styles[`menubar_sm_${isOpen ? 'open' : 'close'}`]} ${
+        className={`${styles[`menubar_sm_${open ? 'open' : 'close'}`]} ${
           styles.menubar_sm
         }`}
       >
