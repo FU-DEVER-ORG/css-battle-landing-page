@@ -1,23 +1,29 @@
+@import './src/styles/styles.mixins.scss';
+
+
 .contact {
+
   margin-top: 30px;
   gap: 33px;
   display: flex;
   flex-direction: column;
   align-items: start;
 
-  @media only screen and (max-width: 768px) {
-    padding: 20px 20px;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    padding: 40px 40px;
-  }
-
-  @media only screen and (min-width: 1024px) {
-    padding: 80px 80px;
-  }
-
   background-color: #ffffff;
+
+
+  padding: 60px 0;
+
+  @include mobile {
+    padding: 40px 0;
+
+  }
+
+  @include tablet {
+    padding: 40px 0;
+
+  }
+
 
 }
 
@@ -133,13 +139,14 @@
     width: 100%;
   }
 
-  @media only screen and (max-width: 768px) {
-    flex-direction: column;
-  }
 }
 
 .contact-main_button {
   background-color: #9418b2;
+  width: max-content;
+
+  cursor: pointer;
+
   box-shadow: 0px 0px 16px 0px #6424b2;
   color: #ffffff;
   height: 40px;
@@ -147,10 +154,7 @@
   gap: 10px;
   font-size: 16px;
   justify-content: center;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
+  border: none;
   font-family: unset;
   margin-top: 108px;
   z-index: 4;
@@ -180,13 +184,11 @@
   height: 454px;
   margin-left: -3px;
   position: relative;
-  flex: 1;
+  width: 300px;
 
-  @media only screen and (max-width: 768px) {
-    align-self: stretch;
-    width: 100%;
-    flex: unset;
-    margin-left: 0px;
+  @media (max-width: 1024px) {
+    width: 300px;
+    margin-right: 20px;
   }
 }
 
@@ -199,6 +201,6 @@
   position: absolute;
   bottom: 30px;
   margin: auto;
-  transform: rotate(12deg);
+  transform: rotate(12deg) translateX(-50px);
   border-radius: 50%;
 }
