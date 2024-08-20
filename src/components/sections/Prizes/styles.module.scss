@@ -1,3 +1,4 @@
+@import './src/styles/styles.mixins.scss';
 
 .contact {
   background-color: #ffff;
@@ -5,6 +6,16 @@
   padding: 60px 0;
   text-align: center;
   width: 100%;
+
+  @include mobile {
+    padding: 40px 0;
+
+  }
+
+  @include tablet {
+    padding: 40px 0;
+
+  }
   
   &__title {
     height: 62px;

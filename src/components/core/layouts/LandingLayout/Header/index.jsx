@@ -2,6 +2,7 @@
 import styles from './styles.module.scss';
 import { useState } from 'react';
 import HamburgerMenuIcon from './HamburgerMenu';
+import Link from 'next/link';
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -31,12 +32,13 @@ function Header() {
           </a>
         </nav>
         <div className={styles['button']}>
-          <a
+          <Link
+            target="_blank"
             href="https://docs.google.com/forms/d/e/1FAIpQLSc1KNczkcH68Uxgk09WR6eEpbqUyk5ASEVzLDFCZGKNA3pQ7A/viewform?usp=sf_link"
             className={styles['register']}
           >
             Đăng ký ngay
-          </a>
+          </Link>
           <button className={styles['icon']} onClick={handleClick}>
             <HamburgerMenuIcon open={open} />
           </button>

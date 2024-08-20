@@ -4,6 +4,14 @@
   background-color: #ffffff;
   padding: 60px 0;
 
+  @include mobile {
+    padding: 40px 0;
+  }
+
+  @include tablet {
+    padding: 40px 0;
+  }
+
   &__frame {
     margin-bottom: 20px;
     display: flex;
@@ -47,6 +55,7 @@
     flex-direction: row;
     width: 100%;
     margin-top: 50px;
+
     @include desktop {
       flex-direction: column;
     }
@@ -58,6 +67,7 @@
     width: 50%;
     box-sizing: border-box;
     align-items: center;
+
     // gap: 2em;
     @include desktop {
       flex-direction: row;
@@ -81,6 +91,7 @@
       height: 230px;
       visibility: hidden;
     }
+
     @include desktop {
       border: 0;
       width: 25%;
@@ -132,10 +143,12 @@
     height: 300px;
     justify-content: center;
     border-bottom: #820c91 1px solid;
+
     @include mobile {
       height: 270px;
       visibility: hidden;
     }
+
     @include desktop {
       width: 25%;
       border: 0;
@@ -178,10 +191,12 @@
       margin-bottom: 5px;
       color: #630b6f;
     }
+
     @include mobile {
       margin-left: 100%;
       height: 200px;
     }
+
     @include desktop {
       width: 25%;
       justify-content: flex-end;
@@ -229,10 +244,12 @@
       font-weight: 700;
       color: #a409b7;
     }
+
     @include mobile {
       margin-left: 100%;
       height: 200px;
     }
+
     @include desktop {
       width: 25%;
       justify-content: flex-end;
@@ -357,6 +374,7 @@
 
   &__content_1 {
     width: 320px;
+
     p,
     h6 {
       text-align: center;
@@ -385,16 +403,19 @@
     justify-content: center;
     border-bottom: #3d0c45 1px solid;
     height: 300px;
+
     b {
       font-size: 25px;
       margin-bottom: 5px;
       font-weight: 700;
       color: #3d0c45;
     }
+
     @include mobile {
       height: 220px;
       margin-right: 100%;
     }
+
     @include desktop {
       width: 25%;
       justify-content: flex-start;
@@ -427,10 +448,12 @@
     height: 300px;
     justify-content: center;
     border-bottom: #630b6f 1px solid;
+
     @include mobile {
       visibility: hidden;
       height: 230px;
     }
+
     @include desktop {
       width: 25%;
       border: 0;
@@ -474,16 +497,19 @@
     border-bottom: #820c91 1px solid;
     height: 300px;
     justify-content: center;
+
     b {
       font-size: 25px;
       margin-bottom: 5px;
       font-weight: 700;
       color: #820c91;
     }
+
     @include mobile {
       height: 235px;
       margin-right: 100%;
     }
+
     @include desktop {
       width: 25%;
       justify-content: flex-start;
@@ -514,10 +540,12 @@
     height: 300px;
     border-bottom: #a409b7 1px solid;
     justify-content: center;
+
     @include mobile {
       height: 200px;
       visibility: hidden;
     }
+
     @include desktop {
       width: 25%;
       border: 0;
@@ -543,6 +571,7 @@
 
   &__line4 {
     display: none;
+
     @include desktop {
       background: #a409b7;
       margin-left: 3px;

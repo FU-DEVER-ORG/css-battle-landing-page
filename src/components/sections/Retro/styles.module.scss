@@ -1,20 +1,18 @@
-@import "/src/styles/styles.mixins.scss";
+@import './src/styles/styles.mixins.scss';
 
 .contact {
   background-color: #ffffff;
   padding: 60px 0;
-}
-
-.contact {
   background-color: #ffffff;
   padding: 60px 0;
 
   @include mobile {
     padding: 40px 0;
+
   }
 
   @include tablet {
-    padding: 20px 0;
+    padding: 40px 0;
   }
 
   &__title {
@@ -73,7 +71,7 @@
   &__intro1 {
     font-size: 32px;
     line-height: 32px;
-    color: #9418b2;
+    color: #9418B2;
     padding-left: 15px;
     font-weight: 400;
 
@@ -81,13 +79,16 @@
       margin: 0%;
       font-size: 24px;
       line-height: 24px;
+
     }
 
     @include tablet {
       margin: 0%;
       font-size: 28px;
       line-height: 30px;
+
     }
+
   }
 
   &__intro2 {
@@ -107,7 +108,9 @@
       margin: 0%;
       font-size: 18px;
       line-height: 32px;
+
     }
+
   }
 
   &__intro {
@@ -115,7 +118,7 @@
     text-align: justify;
     justify-content: center;
     display: flexbox;
-    border-left: 5px solid #9418b2;
+    border-left: 5px solid #9418B2;
 
     margin: 0 0 20px 0;
 
@@ -128,6 +131,7 @@
       height: 52px;
       margin: 0 0 20px 0;
     }
+
   }
 
   &__organizingUnit {
@@ -139,8 +143,9 @@
     gap: 24px;
 
     @include mobile {
-      margin-top: 60px;
+      margin-top: 40px;
       gap: 12px;
+
     }
 
     @include tablet {
@@ -151,14 +156,17 @@
     &__title {
       font-size: 32px;
       font-weight: 400;
-      color: #9418b2;
+      color: #9418B2;
 
       @include mobile {
         font-size: 24px;
+
+
       }
 
       @include tablet {
         font-size: 28px;
+
       }
     }
 
@@ -171,4 +179,5 @@
       }
     }
   }
+
 }
