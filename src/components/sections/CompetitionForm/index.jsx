@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import IMG from '@/public/photo/img_3_1.png';
-import IMG1 from '@/public/photo/img35.svg';
+import IMG from '@img/photo/img_3_1.png';
+import IMG1 from '@img/photo/img35.svg';
 import * as styles from './styles.module.scss';
 function CompetitionForm() {
   return (
