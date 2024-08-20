@@ -3,6 +3,8 @@
 .contact {
   background-color: #ffffff;
   padding: 60px 0;
+  background-color: #ffffff;
+  padding: 60px 0;
 
   @include mobile {
     padding: 40px 0;
@@ -10,8 +12,7 @@
   }
 
   @include tablet {
-    padding: 20px 0;
-
+    padding: 40px 0;
   }
 
   &__title {
@@ -142,7 +143,7 @@
     gap: 24px;
 
     @include mobile {
-      margin-top: 60px;
+      margin-top: 40px;
       gap: 12px;
 
     }
