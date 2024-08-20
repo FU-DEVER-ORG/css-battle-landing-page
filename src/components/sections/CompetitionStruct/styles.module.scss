@@ -1,20 +1,206 @@
+@import './src/styles/styles.mixins.scss';
+
+
 .contact {
-  background-color: #818181;
 
-  padding: 40px 0;
+  margin-top: 30px;
+  gap: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 
-  &__title {
+  background-color: #ffffff;
+
+
+  padding: 60px 0;
+
+  @include mobile {
+    padding: 40px 0;
+
+  }
+
+  @include tablet {
+    padding: 40px 0;
+
+  }
+
+
+}
+
+.contact-section {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-header {
+  display: flex;
+  display: block;
+  height: 56px;
+  gap: 4px;
+  border-left: 4px solid #9418B2;
+  margin: 0 0 20px 0;
+}
+
+.contact-header-text {
+  font-size: 32px;
+  line-height: 32px;
+  color: #9418B2;
+  padding-left: 15px;
+  font-weight: 400;
+
+  @media only screen and (max-width: 768px) {
+    margin: 0%;
     font-size: 24px;
-    font-weight: 700;
-    color: #000;
-
-    margin-bottom: 20px;
+    line-height: 24px;
   }
 
-  &__image {
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    margin: 0%;
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+
+.contact-header-text1 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #000000;
+  padding-left: 15px;
+}
+
+.contact-section {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.contact-section1 {
+  gap: 32px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  @media only screen and (max-width: 1024px) {
+    align-self: stretch;
+  }
+}
+
+.contact-section-list {
+  gap: 15px;
+  display: flex;
+  background-color: #ffffff;
+  flex: 1;
+  flex-direction: column;
+  align-items: start;
+  padding: 43px 56px 40px 60px;
+  box-shadow: 0px 0px 5px 0px #282727;
+
+  @media only screen and (max-width: 1024px) {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.contact-section__round {
+  gap: 12px;
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+}
+
+.contact-section__rounds {
+  padding-left: 11px;
+  padding-right: 11px;
+  align-self: start;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 23px;
+}
+
+.contact-section__action {
+  width: 33%;
+  display: flex;
+  align-items: start;
+
+  @media only screen and (max-width: 1024px) {
     width: 100%;
-    height: 200px;
-
-    background-color: rgb(255, 121, 121);
   }
+
+}
+
+.contact-main_button {
+  background-color: #9418b2;
+  width: max-content;
+
+  cursor: pointer;
+
+  box-shadow: 0px 0px 16px 0px #6424b2;
+  color: #ffffff;
+  height: 40px;
+  padding: 8px 32px 8px 32px;
+  gap: 10px;
+  font-size: 16px;
+  justify-content: center;
+  border: none;
+  font-family: unset;
+  margin-top: 108px;
+  z-index: 4;
+  position: relative;
+}
+
+.contact-main_button:hover {
+  background-color: #5f5cff;
+}
+
+.image {
+  height: 392px;
+  width: 55%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: auto;
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.contact-section__stack {
+  height: 454px;
+  margin-left: -3px;
+  position: relative;
+  width: 300px;
+
+  @media (max-width: 1024px) {
+    width: 300px;
+    margin-right: 20px;
+  }
+}
+
+.contact-section__stack1 {
+  height: 148px;
+  background-color: #cacaca;
+  backdrop-filter: opacity(0.5);
+  filter: blur(20px);
+  width: 250px;
+  position: absolute;
+  bottom: 30px;
+  margin: auto;
+  transform: rotate(12deg) translateX(-50px);
+  border-radius: 50%;
 }
