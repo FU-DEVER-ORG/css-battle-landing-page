@@ -1,5 +1,188 @@
-.footer {
-  background-color: aqua;
+$textColor: #ffff;
 
-  padding: 20px 0;
+@mixin flexTable() {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer {
+  color: $textColor;
+
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+
+  background: linear-gradient(to top, #00050e 22.39%, rgba(0, 5, 14, 0.5) 100%),
+    url('../../../../../../public/footer/background.png');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin: 0 auto;
+  padding-top: 24px;
+  gap: 0px;
+
+  .main {
+    grid-area: main;
+
+    gap: 24px;
+    opacity: 0px;
+    padding-bottom: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    &_title {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 35.57px;
+      text-align: center;
+    }
+
+    &_register {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23.71px;
+      text-align: center;
+      text-decoration: none;
+
+      padding: 8px 24px 8px 24px;
+      gap: 10px;
+      background: #9418b2;
+      box-shadow: 0px 0px 16px 0px #6424b2;
+      color: white;
+    }
+  }
+
+  .detail {
+    grid-area: detail;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+
+    .copywrite {
+      grid-area: copywrite;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      gap: 32px;
+
+      width: 297px;
+      height: 132px;
+
+      // position: relative;
+
+      &_logo {
+        user-select: none;
+        box-sizing: border-box;
+        width: auto;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+        top: 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        &_element_1 {
+          text-wrap: nowrap;
+          font-size: 24px;
+          font-weight: 1000;
+          line-height: 24px;
+          text-align: left;
+        }
+
+        &_element_2 {
+          text-wrap: wrap;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 18px;
+          text-align: center;
+        }
+      }
+
+      &_author {
+        // position: absolute;
+        user-select: none;
+      }
+    }
+
+    .contact {
+      grid-area: contact;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+      &_idea {
+        @include flexTable();
+      }
+
+      &_content {
+        @include flexTable();
+
+        color: $textColor;
+        text-decoration: none;
+
+        a {
+          color: $textColor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  .detail {
+    flex-direction: column-reverse !important;
+    align-content: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap : 40px !important;
+    .contact{
+      // width: 100%;
+    }
+  }
+}
+
+/*Mobile*/
+@media (max-width: 450px) {
+  .footer {
+    .container {
+      gap: 24px;
+
+      .detail {
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        gap: 24px;
+
+        .copywrite {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+
+          width: auto;
+          gap: 30px;
+
+          &_logo {
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
 }

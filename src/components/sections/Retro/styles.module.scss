@@ -1,20 +1,183 @@
-.contact {
-  background-color: #818181;
+@import './src/styles/styles.mixins.scss';
 
-  padding: 40px 0;
+.contact {
+  background-color: #ffffff;
+  padding: 60px 0;
+  background-color: #ffffff;
+  padding: 60px 0;
+
+  @include mobile {
+    padding: 40px 0;
+
+  }
+
+  @include tablet {
+    padding: 40px 0;
+  }
 
   &__title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #000;
+    font-size: 16px;
+    line-height: 23.71px;
+    font-weight: 400;
+    color: #000000;
+    margin: 20px 0 0 0;
 
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile {
+      margin: 10px 0 0 0;
+      font-size: 12px;
+    }
+
+    @include tablet {
+      margin: 10px 0 0 0;
+      font-size: 14px;
+    }
+  }
+
+  &__outimage {
+    width: 100%;
+
+    display: grid;
+    justify-content: left;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+
+    @include mobile {
+      padding: 0px 0px;
+      height: max-content;
+    }
+
+    @include tablet {
+      padding: 0px 0px;
+      height: max-content;
+    }
   }
 
   &__image {
     width: 100%;
-    height: 200px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 
-    background-color: rgb(255, 121, 121);
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
+
+  &__intro1 {
+    font-size: 32px;
+    line-height: 32px;
+    color: #9418B2;
+    padding-left: 15px;
+    font-weight: 400;
+
+    @include mobile {
+      margin: 0%;
+      font-size: 24px;
+      line-height: 24px;
+
+    }
+
+    @include tablet {
+      margin: 0%;
+      font-size: 28px;
+      line-height: 30px;
+
+    }
+
+  }
+
+  &__intro2 {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #000000;
+    padding-left: 15px;
+
+    @include mobile {
+      margin: 0%;
+      font-size: 12px;
+      line-height: 30px;
+    }
+
+    @include tablet {
+      margin: 0%;
+      font-size: 18px;
+      line-height: 32px;
+
+    }
+
+  }
+
+  &__intro {
+    height: 56px;
+    text-align: justify;
+    justify-content: center;
+    display: flexbox;
+    border-left: 5px solid #9418B2;
+
+    margin: 0 0 20px 0;
+
+    @include mobile {
+      margin: 0 0 10px 0;
+      height: 44px;
+    }
+
+    @include tablet {
+      height: 52px;
+      margin: 0 0 20px 0;
+    }
+
+  }
+
+  &__organizingUnit {
+    margin-top: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @include mobile {
+      margin-top: 40px;
+      gap: 12px;
+
+    }
+
+    @include tablet {
+      margin-top: 40px;
+      gap: 10px;
+    }
+
+    &__title {
+      font-size: 32px;
+      font-weight: 400;
+      color: #9418B2;
+
+      @include mobile {
+        font-size: 24px;
+
+
+      }
+
+      @include tablet {
+        font-size: 28px;
+
+      }
+    }
+
+    &__image {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
 }
