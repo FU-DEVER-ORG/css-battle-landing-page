@@ -11,11 +11,11 @@ function MainPage() {
     <>
       <HeroSection />
       <Introduction />
+      <Retro />
       <Prizes />
       <CompetitionStruct />
       <CompetitionForm />
       <TimelineSection />
-      <Retro />
     </>
   );
 }
