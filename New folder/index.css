@@ -1,0 +1,104 @@
+
+.content-section__description-span {
+    color: var(--black_900_03);
+  }
+  
+  .content-section__description-container {
+    margin-top: 9px;
+    gap: var(--space-md);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+  }
+  
+  .content-section__time-limit-row {
+    padding-left: 9px;
+    padding-right: 9px;
+    align-self: start;
+    display: flex;
+  }
+  
+  .content__header {
+    gap: var(--space-xl);
+    display: flex;
+    align-items: center;
+  }
+  
+  .content__header__line {
+    height: 56px;
+    background-color: var(--purple_600);
+    width: 4px;
+  }
+  
+.content-section {
+    margin-top: 69px;
+    gap: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    @media only screen and (max-width: 1050px) {
+      padding: var(--space-xl);
+    }
+  }
+  
+  .content-section__header-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-section__main {
+    background-color: var(--white_A700);
+    box-shadow: var(--shadow-sm);
+    align-self: stretch;
+    display: flex;
+    @media only screen and (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+  
+  .content-section__image {
+    height: 584px;
+    width: 33%;
+    object-fit: cover;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+  
+  .content-section__text-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 42px var(--space-3xl) var(--space-3xl) var(--space-3xl);
+    @media only screen and (max-width: 1050px) {
+      align-self: stretch;
+      padding-top: var(--space-xl);
+      padding: var(--space-xl);
+    }
+  }
+  
+  .content-section__subheading {
+    color: var(--purple_600) !important;
+    align-self: start;
+  }
+  
+  .content-section__description-span-1 {
+    color: #5f5cff;
+  }
+  
+  .content-section__image--secondary {
+    height: 12px;
+    margin-top: 12px;
+    width: 100%;
+  }
+  
+  .content-section__rules-heading {
+    color: var(--purple_600) !important;
+    margin-top: 14px;
+    align-self: start;
+  }
+  
+  .content-section__registration-button {
+    margin-top: 32px;
+  }

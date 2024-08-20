@@ -1,0 +1,208 @@
+.contact {
+  margin-top: 30px;
+  gap: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  @media only screen and (max-width: 768px) {
+    padding: 20px 20px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 40px 40px;
+  }
+  @media only screen and (min-width: 1024px) {
+    padding: 80px 80px;
+  }
+  background-color: #ffffff;
+  
+}
+
+.contact-section {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-header {
+    display: flex;
+    display: block;
+    height: 56px;
+    gap: 4px;
+    border-left: 4px solid #9418B2;
+    margin: 0 0 20px 0;
+  }
+
+.contact-header-text2 {
+      font-size: 32px;
+      line-height: 32px;
+      color: #9418B2; 
+      padding-left: 15px;
+      font-weight: 400;
+      @media only screen and (max-width: 768px) {
+        margin: 0%;
+        font-size: 24px;
+        line-height: 24px;
+     }
+      @media only screen and (max-width: 1024px) and (min-width: 768px) {
+        margin: 0%;
+        font-size: 28px;
+        line-height: 30px;
+      } 
+    }
+
+.contact-header-text {
+  font-size: 32px;
+  line-height: 32px;
+  color: #9418B2; 
+  font-weight: 400;
+  @media only screen and (max-width: 768px) {
+    margin: 0%;
+    font-size: 24px;
+    line-height: 24px;
+   }
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    margin: 0%;
+    font-size: 28px;
+    line-height: 30px;
+   } 
+}    
+  
+.contact-header-text1 {
+  font-size: 20px ;
+  line-height: 32px;
+  font-weight: 400;
+  color: #000000; 
+  padding-left: 15px;
+  }
+
+.contact-section {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction:column;
+  }
+}
+
+.contact-section1 {
+  gap: 32px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+ 
+  @media only screen and (max-width: 1024px) {
+    align-self: stretch;
+  }
+}
+
+.contact-section-list {
+    gap: 15px;
+    display: flex;
+    background-color: #ffffff;
+    flex: 1;
+    flex-direction: column;
+    align-items: start;
+    padding: 43px 56px 40px 60px;
+    box-shadow: 0px 0px 4px 0px #282727;
+    @media only screen and (max-width: 1024px) {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+      padding: 20px;
+    }
+  }
+
+.contact-section__round {
+    gap: 12px;
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+  }
+
+.contact-section__rounds {
+    padding-left: 11px;
+    padding-right: 11px;
+    align-self: start;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 23px;
+  }  
+
+.contact-section__action {
+  width: 33%;
+  display: flex;
+  align-items: start;
+  padding-top: -30%;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    display: block;
+ }
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    width: 100%;
+  } 
+  }
+
+.contact-main_button {
+    margin-top: 108px;
+    background-color: #9418b2;
+    box-shadow: 0px 0px 16px 0px #6424b2;
+    color: #ffffff;
+    height: 40px;
+    padding: 8px 32px 8px 32px;
+    gap: 10px;
+    font-size: 16px;
+    justify-content: center;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    font-family: unset;
+    @media only screen and (max-width: 768px) {
+      padding: auto;
+      margin-top: 0;
+      margin-left:32%;
+   } 
+  }
+
+.contact-main_button:hover {
+    background-color:#5f5cff ;}
+
+.image {
+  width: 55%;
+  position: absolute;
+  margin: auto;
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+   height: 50%;
+   margin-top: 20%;
+  } 
+}
+
+.contact-section__stack {
+    height: 454px;
+    margin-left: -3px;
+    position: relative;
+    flex: 1;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+.contact-section__stack1 {
+    height: 148px;
+    transform: rotate(12deg);
+    background-color: #cacaca;
+    backdrop-filter: opacity(0.5);
+    filter: blur(20px);
+    width: 250px;
+    position: absolute;
+    bottom: 30px;
+    margin: auto;
+  border-radius: 50%;
+  }
+
