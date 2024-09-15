@@ -1,10 +1,10 @@
 
 import Image from 'next/image';
 
-import Player2 from '@/img/Retro/player2.png';
-import Player1 from '@/img/Retro/player1.png';
-import Player3 from '@/img/Retro/player3.png';
-import organizingUnit from '@/img/Retro/organizingUnit.png';
+import Player2 from '@img/Retro/player2.png';
+import Player1 from '@img/Retro/player1.png';
+import Player3 from '@img/Retro/player3.png';
+import organizingUnit from '@img/Retro/organizingUnit.png';
 
 import * as styles from './styles.module.scss';
 

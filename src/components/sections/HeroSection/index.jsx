@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './styles.module.scss';
 import React from 'react';
-import image from '@/img/hero_section/image.png';
+import image from '@img/hero_section/image.png';
 import Image from 'next/image';
 
 function HeroSection() {
