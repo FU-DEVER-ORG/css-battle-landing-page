@@ -1,10 +1,11 @@
 .hero {
   aspect-ratio: 16 / 9;
-  margin-top: 90px;
+  margin-top: 70px;
   width: 100%;
   &_img {
     width: 100%;
-    height: 100%;
+    height: 160%;
+    object-fit: cover;
   }
 }
 

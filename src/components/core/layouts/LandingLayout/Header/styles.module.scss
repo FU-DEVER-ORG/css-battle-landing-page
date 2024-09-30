@@ -40,9 +40,6 @@ $default_color: #9418b2;
   height: 90px;
   gap: 30px;
 
-
-
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -135,9 +132,56 @@ $default_color: #9418b2;
     position: fixed;
     top: 0;
     z-index: 99;
+    height: 70px;
 
     .menubar_lg {
       display: none;
+    }
+    .logo {
+      user-select: none;
+      text-decoration: none;
+      box-sizing: border-box;
+      color: $default_color;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      &_element_1 {
+        text-wrap: nowrap;
+        font-size: 24px;
+        font-weight: 1000;
+        line-height: 24px;
+        text-align: left;
+      }
+
+      &_element_2 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+      }
+    }
+    .button {
+      .register {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 23.71px;
+        text-align: center;
+        text-decoration: none;
+
+        width: Hug (141px) px;
+        height: Hug (40px) px;
+        padding: 8px 32px 8px 32px;
+        gap: 10px;
+        opacity: 0px;
+        background: #9418b2;
+        color: white;
+        transition: box-shadow 0.3s ease-in-out;
+
+        &:hover {
+          box-shadow: 0px 0px 16px 0px #6424b2;
+        }
+      }
     }
   }
 
@@ -194,24 +238,20 @@ $default_color: #9418b2;
 
 /*Tablet*/
 
-
-@media only screen and (max-width: 1439px) and (min-width :768px) {
+@media only screen and (max-width: 1439px) and (min-width: 768px) {
   .container_header {
     padding: 20px 60px;
   }
-
 }
 
-
-@media only screen and (max-width: 767px) and (min-width :640px) {
+@media only screen and (max-width: 767px) and (min-width: 640px) {
   .container_header {
     padding: 20px 40px;
   }
-
 }
 
 @media only screen and (max-width: 639px) {
   .container_header {
-    padding: 20px 20px;
+    padding: 0px 20px;
   }
 }
